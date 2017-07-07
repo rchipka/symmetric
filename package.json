@@ -1,0 +1,23 @@
+{
+  "name": "symmetric",
+  "version": "0.0.1",
+  "description": "Server-side code in the browser",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rchipka/symmetric.git"
+  },
+  "author": {
+    "name": "rchipka",
+    "email": "chipka01@email.franklin.edu"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "license": "MIT",
+  "main": "index",
+  "readmeFilename": "Readme.md",
+  "bugs": {
+    "url": "https://github.com/rchipka/symmetric/issues"
+  }
+}
