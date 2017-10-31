@@ -162,14 +162,18 @@ identified by fuzzing anyways.
 
 ### How do I obscure centain code from the client?
 
-By wrapping the code in a nested block expression `{{ ... }}`
+Sometimes it's necessary to make sure that certain logic is never sent to
+to the client.
+
+In Symmetric, this is done by wrapping the code in a nested block expression `{{ ... }}`.
 
 You can label blocks (useful for debugging):
 
 ```javascript
-{{example:
+{{
+  example:
 
-  // server only code
+  // server-only code
 
 }}
 ```
@@ -178,7 +182,7 @@ You can label blocks (useful for debugging):
 {{
   'example with spaces'
 
-  // server only code
+  // server-only code
 
 }}
 ```
