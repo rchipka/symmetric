@@ -119,9 +119,18 @@ which is just code that couldn't run on initial render (eg, event handlers).
 Symmetric evaluates javascript code as a pre-parsed AST on both the server and
 client.
 
-As long as the feature can be parsed, Symmetric's javascript evaluator supports the feature, and as long
-as any browser can run the simple javascript evaluator, *all* browsers of *any*
-age can execute that code.
+This allows Symmetric to make the latest ECMA script features available on any client.
+
+This also means that Symmetric can go beyond simple polyfills and do otherwise impossible things.
+
+For example, Symmetric can fully implement the `let` keyword and the Object `Proxy` API,
+providing a single consistent code execution platform on both the client and server.
+
+*All* browsers of *any* age can execute that code, **if:**
+
+* The feature can be parsed
+* The Javascript evaluator supports the feature
+* The browser can run the (very simple) javascript evaluator
 
 ## Is it secure?
 
@@ -146,6 +155,9 @@ the server to jump any deeper in the code path.
 
 Client can tell the server where it should end up based on an exit point,
 and it's up to the server whether or not it ends up there.
+
+This means that the client can modify the code in any way they want, but
+they still can't bypass anything.
 
 ### Can't the client read my server code? (information disclosure)
 
