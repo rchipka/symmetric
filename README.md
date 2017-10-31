@@ -153,11 +153,9 @@ Client can't see server values (no source code information disclosure).
 
 Values are hashed and can only be compared to another hash on the client.
 
-see: [How do I obscure certain code from the client](#)
+see: [How do I obscure certain code from the client](#how-do-i-obscure-certain-code-from-the-client)
 
-## Quick answers:
-
-### When does the client pass control to the server?
+## FAQ:
 
 ### How do I obscure certain code from the client?
 
@@ -203,3 +201,9 @@ it is usually unnecessary to wrap your code in nested block expressions.
 
 Code should only be wrapped in cases where the **values embedded in the code** or the
 **code logic itself** needs to be kept secret from the client.
+
+Some use cases for nested block expressions are:
+
+  * Protecting hardcoded database passwords
+  * Protecting in-scope objects that contain sensitive information
+  * Forcing code to run in the server, even though it is able to run in the client
