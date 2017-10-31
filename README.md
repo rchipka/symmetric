@@ -53,28 +53,9 @@ symmetric('./app.js')
 
 # How does it work?
 
-Things to note:
-
- * Symmetric parses the javascript the code to an abstract syntax tree (AST), and never at any point
-   turns it back into javascript code.
- * Symmetric uses it's own javascript evaluator to run code on the client and server.
- * Symmetric handles communication between the client and server using websockets or AJAX fallback.
- * Symmetric can render pages using a server-side DOM.
-
-Definitions:
-
- * Server entry point:
-
-   The point at which a client code path began executing.
-   The server can *end up* in sync with the client, but only by starting
-   exactly where the client started.
-
-   see: [Can't the client skip my validation checks?](#is-it-secure)
-
- * Server exit point:
-
-   The point at which the server returns control to the client.
-
+1. Symmetric parses the javascript the code to an abstract syntax tree (AST).
+2. Symmetric uses it's own javascript evaluator to run the code on the client and server.
+3. Symmetric transfers state between the client and server over websockets or AJAX fallback.
 
 ### How can it execute server code on the client?
 
