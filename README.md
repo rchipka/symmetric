@@ -52,7 +52,7 @@ symmetric('./app.js')
 ```
 
 
-## How does it work?
+# How does it work?
 
 Things to note:
 
@@ -132,7 +132,7 @@ providing a single consistent code execution platform on both the client and ser
 * The Javascript evaluator supports the feature
 * The browser can run the (very simple) javascript evaluator
 
-## Is it secure?
+# Is it secure?
 
 Much thought has been put into making Symmetric work, especially guaranteeing
 that it works securely.
@@ -167,7 +167,7 @@ Values are hashed and can only be compared to another hash on the client.
 
 see: [How do I obscure certain code from the client](#how-do-i-obscure-certain-code-from-the-client)
 
-## FAQ:
+# FAQ:
 
 ### How do I obscure certain code from the client?
 
