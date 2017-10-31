@@ -2,7 +2,7 @@
 
 Symmetric enables an app or website to securely achieve *seamless interaction between
 a client and server*, without learning any frameworks, without building any APIs,
-and without maintaining two codebases.
+and without maintaining multiple codebases.
 
 With server side DOM rendering enabled, Symmetric can enable your app to operate
 seamlessly as *both a static web site or dynamic web application*, without
@@ -37,11 +37,11 @@ control back to the client as soon as it can.
 
 # Usage
 
-## Command-line interface
+### Command-line interface
 
 `symmetric app.js`
 
-## Module
+### Module
 
 ```javascript
 var symmetric = require('symmetric');
