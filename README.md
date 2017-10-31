@@ -26,7 +26,7 @@ about routing/HTTP.
  * Legacy support: *All* next-generation javascript features in *any browser*, forever.
  * Scalability/Redudancy: Servers can jump between code paths as needed.
  * Reliability: Advanced error handling, resolving, inspection, and resiliency.
- * Efficiency: Clients only get the code they *need*, servers only run the code they *have to.*
+ * Efficiency: Clients only receive the code they *need*, servers only run the code when they *must.*
  * SEO/Accessibility: Seamlessly enables web apps to be navigated like static web pages.
  * Easy integration: Supports your current stack (React, Angular, Vue, Express, etc.)
 
