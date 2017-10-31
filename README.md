@@ -114,7 +114,7 @@ providing a single consistent code execution platform on both the client and ser
 
 # Is it secure?
 
-Much thought has been put into making Symmetric work, especially guaranteeing
+Much thought has been put into making Symmetric work, especially in guaranteeing
 that it works securely.
 
 ### Can't the client inject anything they want into my server code? (client priviledges)
@@ -165,7 +165,7 @@ should you decide not to use it.
 Another benefit is that the code will work just as well *without* nested block expressions,
 and they can be added over time as-needed.
 
-You can label blocks (useful for debugging):
+You also can label blocks (useful for debugging):
 
 ```javascript
 {{
