@@ -156,16 +156,24 @@ Values are hashed and can only be compared to another hash on the client.
 The client can only see server side logic on abstract values, which could
 identified by fuzzing anyways.
 
+see: [How do I obscure certain code from the client](#)
+
 ## Quick answers:
 
 ### When does the client pass control to the server?
 
-### How do I obscure centain code from the client?
+### How do I obscure certain code from the client?
 
 Sometimes it's necessary to make sure that certain logic is never sent to
 to the client.
 
 In Symmetric, this is done by wrapping the code in a nested block expression `{{ ... }}`.
+
+The benefit of using nested block expressions is that the javascript code will still
+run regardless of whether you're using Symmetric.
+
+Another benefit is that the code will work just as well without nested block expressions,
+and they can be added as-needed.
 
 You can label blocks (useful for debugging):
 
@@ -180,9 +188,18 @@ You can label blocks (useful for debugging):
 
 ```javascript
 {{
-  'example with spaces'
+  'example with spaces';
 
   // server-only code
 
 }}
 ```
+
+
+#### How do I know when to use nested block expressions?
+
+Since Symmetric already guarantees secure validation, client input, and program control flow,
+it is usually unnecessary to wrap your code in nested block expressions.
+
+Code should only be wrapped in cases where the **values embedded in the code** or the
+**code logic itself** needs to be kept secret from the client.
