@@ -137,7 +137,7 @@ Client can tell the server where it should end up based on an exit point,
 and it's up to the server whether or not it ends up there.
 
 This means that the client can modify the code in any way they want, but
-they still can't bypass anything.
+they still *can't bypass anything.*
 
 ### Can't the client read my server code? (information disclosure)
 
