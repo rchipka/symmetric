@@ -127,16 +127,18 @@ has no control beyond that.
 
 ### Can't the client skip my validation/sanitization checks? (client validation)
 
-Client can never bypass a codepath, server guarantees that all intended
-operations happen, and happen in order.
+Clients can never bypass a codepath or skip an operation in the original
+source code.
 
-Server will only enter into an entry point scope, the client cannot force
-the server to jump any deeper in the code path.
+Servers double-check the client, and guarantee every intended operation.
 
-Client can tell the server where it should end up based on an exit point,
-and it's up to the server whether or not it ends up there.
+Servers can only, and will only, enter into code from a predetermined *entry
+point*.
 
-This means that the client can modify the code in any way, but still *can't
+Clients only tell a server where they need to return to, the server decides
+whether or not it makes it to the return point.
+
+This means that a client can modify the code in any way, but still *can't
 bypass anything.*
 
 ### Can't the client read my server code? (information disclosure)
