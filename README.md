@@ -141,9 +141,8 @@ bypass anything.*
 
 ### Can't the client read my server code? (information disclosure)
 
-Client can't see server values (no source code information disclosure).
-
-Values are hashed and can only be compared to another hash on the client.
+Sensitive information or logic embedded into your code can be made *completely
+inaccessible* to clients.
 
 see: [How do I obscure certain code from the client](#how-do-i-obscure-certain-code-from-the-client)
 
