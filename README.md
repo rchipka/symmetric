@@ -125,7 +125,7 @@ This also means that Symmetric can go beyond simple polyfills and do otherwise i
 For example, Symmetric can fully implement the `let` keyword and the Object `Proxy` API,
 providing a single consistent code execution platform on both the client and server.
 
-*All* browsers of *any* age can execute that code, **if:**
+*All* browsers of *any* age can use next-generation ECMA features, **if:**
 
 1. The feature can be parsed by esprima
 2. The built-in Javascript evaluator supports the feature
