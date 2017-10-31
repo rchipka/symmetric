@@ -112,6 +112,11 @@ providing a single consistent code execution platform on both the client and ser
 2. The built-in Javascript evaluator supports the feature
 3. The browser can run the built-in Javascript evaluator
 
+### What about debuggability?
+
+
+### What about performance?
+
 # Is it secure?
 
 Much thought has been put into making Symmetric work, especially guaranteeing
