@@ -216,6 +216,7 @@ Code should only be wrapped in cases where the **embedded values** or the
 
 Some use cases for nested block expressions are:
 
+  * Protecting special business logic
   * Protecting hardcoded database passwords
   * Protecting in-scope objects that contain sensitive information
   * Forcing code to run in the server, even though it is able to run in the client
