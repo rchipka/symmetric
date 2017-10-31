@@ -128,9 +128,9 @@ providing a single consistent code execution platform on both the client and ser
 
 *All* browsers of *any* age can execute that code, **if:**
 
-* The feature can be parsed by esprima
-* The built-in Javascript evaluator supports the feature
-* The browser can run the built-in javascript evaluator
+1. The feature can be parsed by esprima
+2. The built-in Javascript evaluator supports the feature
+3. The browser can run the built-in Javascript evaluator
 
 # Is it secure?
 
