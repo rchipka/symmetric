@@ -161,3 +161,24 @@ identified by fuzzing anyways.
 ### When does the client pass control to the server?
 
 ### How do I obscure centain code from the client?
+
+By wrapping the code in a nested block expression `{{ ... }}`
+
+You can label blocks (useful for debugging):
+
+```javascript
+{{example:
+
+  // server only code
+
+}}
+```
+
+```javascript
+{{
+  'example with spaces'
+
+  // server only code
+
+}}
+```
