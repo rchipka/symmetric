@@ -153,9 +153,6 @@ Client can't see server values (no source code information disclosure).
 
 Values are hashed and can only be compared to another hash on the client.
 
-The client can only see server side logic on abstract values, which could
-identified by fuzzing anyways.
-
 see: [How do I obscure certain code from the client](#)
 
 ## Quick answers:
@@ -169,11 +166,14 @@ to the client.
 
 In Symmetric, this is done by wrapping the code in a nested block expression `{{ ... }}`.
 
-The benefit of using nested block expressions is that the javascript code will still
+The benefit of using nested block expressions is that the javascript code will
 run regardless of whether you're using Symmetric.
 
-Another benefit is that the code will work just as well without nested block expressions,
-and they can be added as-needed.
+This helps to ensure that you're never locked in to the Symmetric environment
+and you can easily move your app elsewhere if you so choose.
+
+Another benefit is that the code will work just as well *without* nested block expressions,
+and they can be added over time as-needed.
 
 You can label blocks (useful for debugging):
 
