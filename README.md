@@ -179,8 +179,8 @@ In Symmetric, this is done by wrapping the code in a nested block expression `{{
 The benefit of using nested block expressions is that the javascript code will
 run regardless of whether you're using Symmetric.
 
-This helps to ensure that you're never locked in to the Symmetric environment
-and you can easily move your app elsewhere if you so choose.
+This helps to ensure that you're never locked into the Symmetric environment
+should you decide not to use it.
 
 Another benefit is that the code will work just as well *without* nested block expressions,
 and they can be added over time as-needed.
