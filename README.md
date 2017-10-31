@@ -13,7 +13,7 @@ operate on the same code.*
 **The server** runs *whatever code it needs to*, then passes control back to the client.
 
 And, with server side DOM rendering enabled, Symmetric can enable your app to operate
-seamlessly as *both a static web site or dynamic web application*, without
+seamlessly as *both a static web site* **or** *dynamic web application*, without
 learning and implementing any additional framework, and without having to think
 about routing/HTTP.
 
