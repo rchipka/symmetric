@@ -5,7 +5,7 @@ interaction* between a client and server - without learning any frameworks,
 without building any APIs, and without maintaining multiple codebases.
 
 Symmetric allows a server and client to automatically enter and exchange
-javascript execution scopes as-needed, meaning *the client and server both
+javascript execution scopes as-needed, meaning the client and server *both
 operate on the same code.*
 
 **The client** runs *whatever code it can*, then passes control over to the server.
