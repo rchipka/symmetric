@@ -2,6 +2,26 @@
 
 Server-side code in the browser
 
+# Install
+
+`npm install symmetric`
+
+# Usage
+
+## Command-line interface
+
+`symmetric app.js`
+
+## Module
+
+```javascript
+var symmetric = require('symmetric');
+
+symmetric('./app.js')
+  .render(true)
+  .port(8080);
+```
+
 # Features
 
  * Fast development time: securely and seamlessly bridges the gap between font and back-end devs.
