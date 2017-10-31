@@ -19,5 +19,11 @@
   "readmeFilename": "Readme.md",
   "bugs": {
     "url": "https://github.com/rchipka/symmetric/issues"
+  },
+  "dependencies": {
+    "esprima": "^4.0.0",
+    "socket.io": "^2.0.3",
+    "sync": "^0.2.5",
+    "syncify": "^1.2.1"
   }
 }
