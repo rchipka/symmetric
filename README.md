@@ -1,16 +1,16 @@
 # Symmetric
 
-Symmetric enables a Javascript web application to securely achieve *seamless interaction between
-a client and server*, without learning any frameworks, without building any APIs,
-and without maintaining multiple codebases.
+Symmetric enables a Javascript web application to securely achieve *seamless
+interaction between a client and server*, without learning any frameworks,
+without building any APIs, and without maintaining multiple codebases.
 
-Symmetric allows the server and client to automatically enter and exchange
+Symmetric allows a server and client to automatically enter and exchange
 javascript execution scopes as-needed, meaning *the client and server both
 operate on the same code.*
 
-**The client** runs *whatever code it can* and then passes control over to the server.
+**The client** runs *whatever code it can*, then passes control over to the server.
 
-**The server** runs *whatever code it needs to* then passes control back to the client.
+**The server** runs *whatever code it needs to*, then passes control back to the client.
 
 And, with server side DOM rendering enabled, Symmetric can enable your app to operate
 seamlessly as *both a static web site or dynamic web application*, without
