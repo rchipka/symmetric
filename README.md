@@ -1,7 +1,7 @@
 # Symmetric
 
 Symmetric enables a Javascript web application to securely achieve *seamless
-interaction between a client and server*, without learning any frameworks,
+interaction* between a client and server, without learning any frameworks,
 without building any APIs, and without maintaining multiple codebases.
 
 Symmetric allows a server and client to automatically enter and exchange
