@@ -211,8 +211,8 @@ You can label blocks (useful for debugging):
 Since Symmetric already guarantees secure validation, client input, and program control flow,
 it is usually unnecessary to wrap your code in nested block expressions.
 
-Code should only be wrapped in cases where the **values embedded in the code** or the
-**code logic itself** needs to be kept secret from the client.
+Code should only be wrapped in cases where the **embedded values** or the
+**logic itself** needs to be kept secret from the client.
 
 Some use cases for nested block expressions are:
 
