@@ -128,9 +128,9 @@ providing a single consistent code execution platform on both the client and ser
 
 *All* browsers of *any* age can execute that code, **if:**
 
-* The feature can be parsed
-* The Javascript evaluator supports the feature
-* The browser can run the (very simple) javascript evaluator
+* The feature can be parsed by esprima
+* The built-in Javascript evaluator supports the feature
+* The browser can run the built-in javascript evaluator
 
 # Is it secure?
 
@@ -179,7 +179,7 @@ In Symmetric, this is done by wrapping the code in a nested block expression `{{
 The benefit of using nested block expressions is that the javascript code will
 run regardless of whether you're using Symmetric.
 
-This helps to ensure that you're never locked into the Symmetric environment
+This helps to ensure that you're never locked into the Symmetric environment,
 should you decide not to use it.
 
 Another benefit is that the code will work just as well *without* nested block expressions,
