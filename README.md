@@ -53,8 +53,8 @@ symmetric('./app.js')
 
 # How does it work?
 
-1. Symmetric parses the javascript the code to an abstract syntax tree (AST).
-2. Symmetric uses it's own javascript evaluator to run the code on the client and server.
+1. Symmetric parses the Javascript the code to an abstract syntax tree (AST).
+2. Symmetric uses it's own Javascript evaluator to run the code on the client and server.
 3. Symmetric transfers state between the client and server over websockets or AJAX fallback.
 
 ### How can it execute server code on the client?
