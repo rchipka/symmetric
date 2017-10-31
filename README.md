@@ -1,6 +1,35 @@
-# symmetric
+# Symmetric
 
-Server-side code in the browser
+Symmetric enables an app or website to securely achieve *seamless interaction between
+a client and server*, without learning any frameworks, without building any APIs,
+and without maintaining two codebases.
+
+With server side DOM rendering enabled, Symmetric can enable your app to operate
+seamlessly as *both a static web site or dynamic web application*, without
+learning and implementing any additional framework, and without having to think
+about routing/HTTP.
+
+Symmetric allows the server and client to automatically enter and exchange
+javascript execution scopes as-needed, meaning *the client and server both
+operate on the same code.*
+
+The client runs code *when it can* and then passes control over to the server.
+
+The server runs code *when it has to* (database insert/query, etc.), then passes
+control back to the client as soon as it can.
+
+# Features
+
+ * Fast development time: securely and seamlessly bridges the gap between font and back-end devs.
+ * No learning curve: Absolutely no framework or API has to be learned.
+ * Enhanced security: Globally encrypted values, guaranteed codepath execution.
+ * Legacy support: *All* next-generation javascript features in *any browser*, forever.
+ * Scalability/Redudancy: Servers can automatically handle any particular code path and can jump between servers as needed.
+ * Reliability: Advanced error handling, resolving, inspection, and resiliency.
+ * Efficiency: Clients only get the code they *need*, servers only run the code they *have to.*
+ * SEO/Accessibility: Seamlessly enables web apps to be navigated like static web pages.
+ * Easy integration: Supports your current stack (React, Angular, Vue, Express, etc.)
+
 
 # Install
 
@@ -22,35 +51,6 @@ symmetric('./app.js')
   .port(8080);
 ```
 
-# Features
-
- * Fast development time: securely and seamlessly bridges the gap between font and back-end devs.
- * No learning curve: Absolutely no framework or API has to be learned.
- * Enhanced security: Globally encrypted values, guaranteed codepath execution.
- * Legacy support: *All* next-generation javascript features in *any browser*, forever.
- * Scalability/Redudancy: Servers can automatically handle any particular code path and can jump between servers as needed.
- * Reliability: Advanced error handling, resolving, inspection, and resiliency.
- * Efficiency: Clients only get the code they *need*, servers only run the code they *have to.*
- * SEO/Accessibility: Seamlessly enables web apps to be navigated like static web pages.
- * Easy integration: Supports your current stack (React, Angular, Vue, Express, etc.)
-
-Symmetric enables an app or website to securely achieve *seamless interaction between
-a client and server*, without learning any frameworks, without building any APIs,
-and without maintaining two codebases.
-
-With server side DOM rendering enabled, Symmetric can enable your app to operate
-seamlessly as *both a static web site or dynamic web application*, without
-learning and implementing any additional framework, and without having to think
-about routing/HTTP.
-
-Symmetric allows the server and client to automatically enter and exchange
-javascript execution scopes as-needed, meaning *the client and server both
-operate on the same code.*
-
-The client runs code *when it can* and then passes control over to the server.
-
-The server runs code *when it has to* (database insert/query, etc.), then passes
-control back to the client as soon as it can.
 
 ## How does it work?
 
