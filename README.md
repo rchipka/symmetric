@@ -103,7 +103,7 @@ some function only available on the client, it will ask the client to do so.
 
 Note on DOM Rendering:
 
-With DOM-rendering enabled, the process is exactly the same except,
+With DOM-rendering enabled, the process is exactly the same, except
 Symmetric starts off by executing client
 code just like a browser would, inside a server-side DOM.
 
