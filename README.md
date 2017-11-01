@@ -36,7 +36,7 @@ about routing/HTTP.
 
 # Usage
 
-### Module
+### As a module:
 
 ```javascript
 var symmetric = require('symmetric');
@@ -47,7 +47,7 @@ symmetric('./app.js')
   .listen(8080);
 ```
 
-### Command-line interface
+### Or with the command-line interface:
 
 `symmetric app.js`
 
