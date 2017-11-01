@@ -109,7 +109,7 @@ providing a single consistent code execution platform on both the client and ser
 
 *All* browsers of *any* age can use next-generation ECMA features, **if:**
 
-1. The feature can be parsed by esprima
+1. The feature can be parsed by Esprima
 2. The built-in Javascript evaluator supports the feature
 3. The browser can run the built-in Javascript evaluator
 
