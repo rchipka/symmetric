@@ -36,10 +36,6 @@ about routing/HTTP.
 
 # Usage
 
-### Command-line interface
-
-`symmetric app.js`
-
 ### Module
 
 ```javascript
@@ -51,6 +47,9 @@ symmetric('./app.js')
   .listen(8080);
 ```
 
+### Command-line interface
+
+`symmetric app.js`
 
 # How does it work?
 
