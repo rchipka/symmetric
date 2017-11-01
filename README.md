@@ -120,7 +120,7 @@ that it works securely.
 
 ### Can't the client inject anything they want into my server code? (client priviledges)
 
-Client can never inject anything (values, functions, objects, etc.) into
+Clients can never inject anything (values, functions, objects, etc.) into
 server scope.
 
 The server can only ask the client for what it needs to know, and the client
