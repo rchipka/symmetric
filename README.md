@@ -19,15 +19,15 @@ about routing/HTTP.
 
 # Features
 
- * Fast development time: securely and seamlessly bridges the gap between font and back-end devs.
  * No learning curve: Absolutely no framework or API has to be learned.
- * Enhanced security: Globally encrypted values, guaranteed codepath execution.
- * Legacy support: *All* next-generation javascript features in *any browser*, forever.
  * Scalability/Redudancy: Servers can jump between code paths as needed.
+ * Easy integration: Supports your current stack (React, Angular, Vue, etc.)
+ * Enhanced security: Globally encrypted values, guaranteed codepath execution.
  * Reliability: Advanced error handling, resolving, inspection, and resiliency.
- * Efficiency: Clients only receive the code they *need*, servers only run code when they *must.*
+ * Legacy support: *All* next-generation javascript features in *any browser*, forever.
  * SEO/Accessibility: Seamlessly enables web apps to be navigated like static web pages.
- * Easy integration: Supports your current stack (React, Angular, Vue, Express, etc.)
+ * Efficiency: Clients only receive the code they *need*, servers only run code when they *must.*
+ * Fast development time: securely and seamlessly bridges the gap between front and back-end devs.
 
 
 # Install
