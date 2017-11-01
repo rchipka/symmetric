@@ -47,7 +47,7 @@ symmetric('./app.js')
   .listen(8080);
 ```
 
-### or with the command-line interface:
+### or CLI:
 
 `symmetric app.js`
 
