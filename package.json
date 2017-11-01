@@ -1,7 +1,7 @@
 {
   "name": "symmetric",
   "version": "0.0.1",
-  "description": "Server-side code in the browser",
+  "description": "Client and server, in perfect harmony",
   "keywords": [],
   "repository": {
     "type": "git",
