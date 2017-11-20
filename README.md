@@ -1,3 +1,7 @@
+<p align="center">
+<img width="108" height="180" src="https://raw.githubusercontent.com/rchipka/symmetric/master/logo.png" />
+</p><br/><br/>
+
 # Symmetric
 
 Symmetric enables a Javascript web application to securely achieve *seamless
