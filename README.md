@@ -190,6 +190,14 @@ You also can label blocks (useful for debugging):
 }}
 ```
 
+```javascript
+function secretStuff() {{
+
+  // server-only code
+
+}}
+```
+
 
 #### How do I know when to use nested block expressions?
 
@@ -205,6 +213,39 @@ Some use cases for nested block expressions are:
   * Protecting hardcoded database passwords
   * Protecting in-scope objects that contain sensitive information
   * Forcing code to run in the server, even though it is able to run in the client
+
+### DOM: How do I wait for async functions to finish before rendering?
+
+You may want to wait for some async stuff to finish before rendering a page.
+
+If the async function doesn't return a Promise, then you can't use `await` keyword.
+
+Instead, you can tell Symmetric to wait for something to finish by using the `await:` label.
+
+```javascript
+await: done: {
+  var timeout = setTimeout(function () {
+      done: throw new Error('Request Timeout');
+    }, 5000);
+
+  $.ajax({
+    'success': function (data) {
+      done:
+
+      clearTimeout(timeout);
+      console.log(data);
+    }
+  });
+}
+```
+
+```javascript
+await: queryDone: db.query(function (results) {
+  queryDone: return results;
+}, function (error) {
+  queryDone: throw new Error('no results');
+});
+```
 
 
 ### What about debuggability?
